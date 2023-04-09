@@ -1,0 +1,14 @@
+D:\LEGION\Documents\Visual Studio Project\数据结构\SqlListForm\bin\Debug\SqlListForm.exe.config
+D:\LEGION\Documents\Visual Studio Project\数据结构\SqlListForm\bin\Debug\SqlListForm.exe
+D:\LEGION\Documents\Visual Studio Project\数据结构\SqlListForm\bin\Debug\SqlListForm.pdb
+D:\LEGION\Documents\Visual Studio Project\数据结构\SqlListForm\bin\Debug\SqlList.dll
+D:\LEGION\Documents\Visual Studio Project\数据结构\SqlListForm\bin\Debug\SqlList.pdb
+D:\LEGION\Documents\Visual Studio Project\数据结构\SqlListForm\obj\Debug\SqlListForm.csproj.AssemblyReference.cache
+D:\LEGION\Documents\Visual Studio Project\数据结构\SqlListForm\obj\Debug\SqlListForm.csproj.SuggestedBindingRedirects.cache
+D:\LEGION\Documents\Visual Studio Project\数据结构\SqlListForm\obj\Debug\SqlListForm.Properties.Resources.resources
+D:\LEGION\Documents\Visual Studio Project\数据结构\SqlListForm\obj\Debug\SqlListForm.SqlList.resources
+D:\LEGION\Documents\Visual Studio Project\数据结构\SqlListForm\obj\Debug\SqlListForm.csproj.GenerateResource.cache
+D:\LEGION\Documents\Visual Studio Project\数据结构\SqlListForm\obj\Debug\SqlListForm.csproj.CoreCompileInputs.cache
+D:\LEGION\Documents\Visual Studio Project\数据结构\SqlListForm\obj\Debug\SqlListForm.csproj.CopyComplete
+D:\LEGION\Documents\Visual Studio Project\数据结构\SqlListForm\obj\Debug\SqlListForm.exe
+D:\LEGION\Documents\Visual Studio Project\数据结构\SqlListForm\obj\Debug\SqlListForm.pdb

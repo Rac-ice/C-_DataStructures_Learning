@@ -1,0 +1,6 @@
+D:\LEGION\Documents\Visual Studio Project\数据结构\SqlList\bin\Debug\SqlList.dll
+D:\LEGION\Documents\Visual Studio Project\数据结构\SqlList\bin\Debug\SqlList.pdb
+D:\LEGION\Documents\Visual Studio Project\数据结构\SqlList\obj\Debug\SqlList.csproj.AssemblyReference.cache
+D:\LEGION\Documents\Visual Studio Project\数据结构\SqlList\obj\Debug\SqlList.csproj.CoreCompileInputs.cache
+D:\LEGION\Documents\Visual Studio Project\数据结构\SqlList\obj\Debug\SqlList.dll
+D:\LEGION\Documents\Visual Studio Project\数据结构\SqlList\obj\Debug\SqlList.pdb

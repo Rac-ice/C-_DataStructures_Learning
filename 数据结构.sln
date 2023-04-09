@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStructures", "DataStructures", "{C9212066-7A05-4F2A-8DF0-B2364D4F6178}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlList", "SqlList\SqlList.csproj", "{354A8BC6-88A4-4991-9C34-90A2F4B457A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlListForm", "SqlListForm\SqlListForm.csproj", "{BECF6C07-4D34-43E3-999D-593F3564C077}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{354A8BC6-88A4-4991-9C34-90A2F4B457A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{354A8BC6-88A4-4991-9C34-90A2F4B457A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{354A8BC6-88A4-4991-9C34-90A2F4B457A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{354A8BC6-88A4-4991-9C34-90A2F4B457A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BECF6C07-4D34-43E3-999D-593F3564C077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BECF6C07-4D34-43E3-999D-593F3564C077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BECF6C07-4D34-43E3-999D-593F3564C077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BECF6C07-4D34-43E3-999D-593F3564C077}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{354A8BC6-88A4-4991-9C34-90A2F4B457A7} = {C9212066-7A05-4F2A-8DF0-B2364D4F6178}
+		{BECF6C07-4D34-43E3-999D-593F3564C077} = {C9212066-7A05-4F2A-8DF0-B2364D4F6178}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C1FCACA-3BA0-4F4B-82B8-155C843BBE06}
+	EndGlobalSection
+EndGlobal
