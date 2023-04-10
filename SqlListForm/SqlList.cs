@@ -93,15 +93,8 @@ namespace SqlListForm
             textBox13.Text = sqlList.DisplayList().ToString();
         }
 
-        SqlListClass SL1, SL2, SL3;
+        SqlListClass SL1, SL2;
 
-        private void button10_Click(object sender, EventArgs e)
-        {
-            string[] str = textBox15.Text.Trim().Split('，', ',');
-            SL2 = new SqlListClass();
-            SL2.CreateList(str);
-            MessageBox.Show("创建成功");
-        }
 
         private void button12_Click(object sender, EventArgs e)
         {
@@ -126,19 +119,46 @@ namespace SqlListForm
             textBox20.Text = even.DisplayList().ToString();
         }
 
+        SqlListClass sl1, sl2, sl3;
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            SL1 = new SqlListClass();
+            SL2 = new SqlListClass();
+            string[] str1 = textBox14.Text.Trim().Split('，', ',');
+            string[] str2 = textBox15.Text.Trim().Split('，', ',');
+            SL1.CreateList(str1);
+            SL2.CreateList(str2);
+            MessageBox.Show("创建成功");
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            sl1 = new SqlListClass();
+            sl2 = new SqlListClass();
+            sl3 = new SqlListClass();
+            string[] str1 = textBox22.Text.Trim().Split('，', ',');
+            string[] str2 = textBox23.Text.Trim().Split('，', ',');
+            string[] str3 = textBox24.Text.Trim().Split('，', ',');
+            sl1.CreateList(str1);
+            sl2.CreateList(str2);
+            sl3.CreateList(str3);
+            MessageBox.Show("创建成功");
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            SqlListClass sl4 = new SqlListClass();
+            sl4.Merge3(sl1,sl2,sl3,ref sl4);
+            textBox21.Text = sl4.DisplayList().ToString();
+        }
+
         private void button11_Click(object sender, EventArgs e)
         {
-            SL3 = new SqlListClass();
+            SqlListClass SL3 = new SqlListClass();
             SL3.Merge2(SL1, SL2, ref SL3);
             textBox16.Text = SL3.DisplayList();
         }
 
-        private void button9_Click(object sender, EventArgs e)
-        {
-            string[] str = textBox14.Text.Trim().Split('，', ',');
-            SL1 = new SqlListClass();
-            SL1.CreateList(str);
-            MessageBox.Show("创建成功");
-        }
     }
 }

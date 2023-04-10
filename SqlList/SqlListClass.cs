@@ -143,7 +143,7 @@ namespace SqlList
             int i = 0,  j = 0, k = 0;
             while (i < L1.length && j < L2.length)
             {
-                if (Convert.ToInt32(L1.data[i]) < Convert.ToInt32(L2.data[j]))
+                if (Convert.ToInt32(L1.data[i]) <= Convert.ToInt32(L2.data[j]))
                 {
                     L3.data[k] = L1.data[i];
                     i++;
@@ -169,6 +169,132 @@ namespace SqlList
                 k++;
             }
             L3.length = k;
+        }
+
+        public void Merge3(SqlListClass L1,SqlListClass L2,SqlListClass L3,ref SqlListClass L4)
+        {
+            int i = 0, j = 0, k = 0, l = 0;
+            while (i < L1.length && j < L2.length && k < L3.length)
+            {
+                if (Convert.ToInt32(L1.data[i]) <= Convert.ToInt32(L2.data[j]) && Convert.ToInt32(L1.data[i]) <= Convert.ToInt32(L3.data[k]))
+                {
+                    L4.data[l] = L1.data[i];
+                    i++;
+                    l++;
+                }
+                else if(Convert.ToInt32(L2.data[j]) <= Convert.ToInt32(L1.data[i]) && Convert.ToInt32(L2.data[j]) <= Convert.ToInt32(L3.data[k]))
+                {
+                    L4.data[l] = L2.data[j];
+                    j++;
+                    l++;
+                }
+                else if(Convert.ToInt32(L3.data[k]) <= Convert.ToInt32(L1.data[i]) && Convert.ToInt32(L3.data[k]) <= Convert.ToInt32(L2.data[j]))
+                {
+                    L4.data[l] = L3.data[k]; 
+                    k++; 
+                    l++;
+                }
+                else if(Convert.ToInt32(L1.data[i]) <= Convert.ToInt32(L2.data[j]) && Convert.ToInt32(L1.data[i]) >= Convert.ToInt32(L3.data[k]))
+                {
+                    L4.data[l] = L3.data[k];
+                    k++;
+                    l++;
+                }
+                else if(Convert.ToInt32(L2.data[j]) <= Convert.ToInt32(L1.data[i]) && Convert.ToInt32(L2.data[j]) >= Convert.ToInt32(L3.data[k]))
+                {
+                    L4.data[l] = L3.data[k];
+                    k++;
+                    l++;
+                }
+                else if(Convert.ToInt32(L3.data[k]) <= Convert.ToInt32(L1.data[i]) && Convert.ToInt32(L3.data[k]) >= Convert.ToInt32(L2.data[j]))
+                {
+                    L4.data[l] = L2.data[j];
+                    j++;
+                    l++;
+                }
+                else if(Convert.ToInt32(L1.data[i]) >= Convert.ToInt32(L2.data[j]) && Convert.ToInt32(L1.data[i]) <= Convert.ToInt32(L3.data[k]))
+                {
+                    L4.data[l] = L2.data[j];
+                    j++;
+                    l++;
+                }
+                else if(Convert.ToInt32(L2.data[j]) >= Convert.ToInt32(L1.data[i]) && Convert.ToInt32(L2.data[j]) <= Convert.ToInt32(L3.data[k]))
+                {
+                    L4.data[l] = L1.data[i];
+                    i++;
+                    l++;
+                }
+                else if(Convert.ToInt32(L3.data[k]) >= Convert.ToInt32(L1.data[i]) && Convert.ToInt32(L3.data[k]) <= Convert.ToInt32(L2.data[j]))
+                {
+                    L4.data[l] = L1.data[i];
+                    i++;
+                    l++;
+                }
+            }
+            while (i < L1.length && j < L2.length)
+            {
+                if (Convert.ToInt32(L1.data[i]) < Convert.ToInt32(L2.data[j]))
+                {
+                    L4.data[l] = L1.data[i];
+                    i++;
+                    l++;
+                }
+                else
+                {
+                    L4.data[l] = L2.data[j];
+                    j++;
+                    l++;
+                }
+            }
+            while(i < L1.length && k < L3.length)
+            {
+                if (Convert.ToInt32(L1.data[i]) < Convert.ToInt32(L3.data[k]))
+                {
+                    L4.data[l] = L1.data[i];
+                    i++;
+                    l++;
+                }
+                else
+                {
+                    L4.data[l] = L3.data[k];
+                    k++;
+                    l++;
+                }
+            }
+            while(j < L2.length && k < L3.length)
+            {
+                if (Convert.ToInt32(L2.data[j]) < Convert.ToInt32(L3.data[k]))
+                {
+                    L4.data[l] = L2.data[j];
+                    j++; 
+                    l++;
+                }
+                else
+                {
+                    L4.data[l] = L3.data[k]; 
+                    k++;
+                    l++;
+                }
+            }
+            while(i < L1.length)
+            {
+                L4.data[l] = L1.data[i];
+                i++;
+                l++;
+            }
+            while(j < L2.length)
+            {
+                L4.data[l] = L2.data[j];
+                j++;
+                l++;
+            }
+            while(k < L3.length)
+            {
+                L4.data[l] = L3.data[k];
+                k++;
+                l++;
+            }
+            L4.length = l;
         }
 
         public void OddAndEven(SqlListClass L1, ref SqlListClass L2, ref SqlListClass L3)
