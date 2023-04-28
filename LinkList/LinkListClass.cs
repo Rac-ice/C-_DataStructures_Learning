@@ -258,9 +258,23 @@ namespace LinkList
             head.data = (Convert.ToInt32(head.data) - 1).ToString();
         }
 
-        public void Sort() 
+
+        public void Sort(string[] split) 
         {
-            
+            int i, j, temp;
+            for (i = 1; i < split.Length; i++)
+            {
+                if (Convert.ToInt32(split[i])< Convert.ToInt32(split[i-1]))
+                {
+                    temp = Convert.ToInt32(split[i]);
+                    for (j = i - 1; j >= 0 && Convert.ToInt32(split[j]) > temp ;--j)
+                    {
+                        split[j + 1] = split[j];
+                    }
+                    split[j + 1] = temp.ToString();
+                }
+            }
+            CreateListR(split);
         }
     }
 }

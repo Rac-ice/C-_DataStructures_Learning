@@ -104,7 +104,9 @@ namespace LinkListForm
 
         private void button11_Click(object sender, EventArgs e)
         {
-            
+            string[] str = textBox1.Text.Trim().Split('，', ',');
+            linkList.Sort(str);
+            textBox20.Text = linkList.DisplayList().ToString();
         }
     }
 }
